@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Impresión — Descargar para Windows</title>
+<meta name="description" content="Programa de Windows para imprimir boletos de rifa numerados, talonarios de factura, impresiones a doble cara y pósteres en varias hojas.">
+<link rel="icon" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b0d13;--bg2:#10131b;--card:rgba(22,25,34,.86);--line:rgba(255,255,255,.08);--text:#e8eaf0;--muted:#8b93a7;--accent:#6f86f0;--accent2:#a9b8f0}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){--bg:#eef0f7;--bg2:#e3e7f4;--card:#ffffff;--line:rgba(30,40,80,.1);--text:#151a2b;--muted:#4f5874;--accent:#5469d6;--accent2:#4a5fc4}}
+:root[data-theme="light"]{--bg:#eef0f7;--bg2:#e3e7f4;--card:#ffffff;--line:rgba(30,40,80,.1);--text:#151a2b;--muted:#4f5874;--accent:#5469d6;--accent2:#4a5fc4}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{font-family:Inter,"Segoe UI",system-ui,sans-serif;color:var(--text);background:var(--bg);
+ background-image:radial-gradient(900px 520px at 75% -5%,rgba(70,100,230,.28),transparent 68%),radial-gradient(700px 500px at 0% 100%,rgba(95,80,220,.18),transparent 70%),linear-gradient(180deg,var(--bg),var(--bg2));
+ min-height:100vh;line-height:1.5}
+.wrap{max-width:1100px;margin:0 auto;padding:28px 16px 48px}
+header{display:flex;align-items:center;gap:12px}
+header img{width:40px;height:40px;border-radius:10px}
+header b{font-size:17px;letter-spacing:.2px}
+.hero{display:grid;grid-template-columns:minmax(0,1fr);gap:28px;margin-top:56px;align-items:center}
+@media(min-width:900px){.hero{grid-template-columns:minmax(0,5fr) minmax(0,6fr)}}
+h1{font-size:clamp(32px,5vw,50px);line-height:1.08;letter-spacing:-1px;margin:0 0 16px}
+h1 span{color:var(--accent2)}
+.lead{font-size:17px;color:var(--muted);margin:0 0 28px;max-width:520px}
+.dl{display:inline-flex;align-items:center;gap:12px;padding:15px 26px;border-radius:14px;background:linear-gradient(135deg,#6f86f0,#4a5fc4);color:#fff;text-decoration:none;font-weight:700;font-size:16.5px;box-shadow:0 14px 34px rgba(80,100,220,.35);transition:transform .15s,box-shadow .15s}
+.dl:hover{transform:translateY(-2px);box-shadow:0 18px 40px rgba(80,100,220,.45)}
+.dl:focus-visible{outline:3px solid var(--accent2);outline-offset:3px}
+.dl svg{width:22px;height:22px}
+.meta{margin-top:14px;font-size:13px;color:var(--muted)}
+.shot{border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 70px rgba(0,0,0,.45);background:var(--card)}
+.shot img{display:block;width:100%;height:auto}
+.feats{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:14px;margin-top:64px}
+.feat{padding:20px;border-radius:16px;background:var(--card);border:1px solid var(--line)}
+.feat i{display:grid;place-items:center;width:38px;height:38px;border-radius:11px;background:rgba(111,134,240,.16);color:var(--accent2);margin-bottom:12px}
+.feat i svg{width:20px;height:20px}
+.feat b{display:block;font-size:15px;margin-bottom:4px}
+.feat p{margin:0;color:var(--muted);font-size:14px}
+.req{margin-top:40px;padding:18px 20px;border-radius:16px;border:1px dashed var(--line);color:var(--muted);font-size:14px}
+.req b{color:var(--text)}
+footer{margin-top:40px;font-size:13px;color:var(--muted);text-align:center}
+footer a{color:var(--accent2)}
+</style>
+</head>
+<body>
+<div class="wrap">
+ <header><img src="icon.png" alt="" width="40" height="40"><b>Impresión</b></header>
+
+ <section class="hero">
+  <div>
+   <h1>Imprime rifas, facturas y pósteres <span>sin complicaciones</span></h1>
+   <p class="lead">Programa para Windows que numera tus boletos de rifa y talonarios de factura, acomoda tus diseños a doble cara y divide imágenes grandes en varias hojas. Imprime directo, sin pasar por el navegador.</p>
+   <a class="dl" id="dl" href="https://github.com/developerdv1studio-web/impresion-app/releases/latest/download/Impresion-Setup.exe">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5"/><path d="M5 21h14"/></svg>
+    Descargar para Windows
+   </a>
+   <div class="meta" id="meta">Windows 10 y 11 · gratis · se actualiza solo</div>
+  </div>
+  <div class="shot"><img src="captura.png" alt="Pantalla del programa Impresión con un talonario de factura" width="1600" height="875"></div>
+ </section>
+
+ <section class="feats" aria-label="Qué puedes hacer">
+  <div class="feat"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 012-2h14a2 2 0 012 2v2a2 2 0 000 4v2a2 2 0 01-2 2H5a2 2 0 01-2-2v-2a2 2 0 000-4z"/><path d="M15 5v14" stroke-dasharray="2 2"/></svg></i><b>Boletos de rifa</b><p>4 por hoja, numerados para el cliente y el dueño, con la tipografía que elijas.</p></div>
+  <div class="feat"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6"/></svg></i><b>Talonario de factura</b><p>2 por hoja, lado a lado o uno arriba del otro, con folio consecutivo.</p></div>
+  <div class="feat"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="12" height="16" rx="2"/><path d="M8 21h10a2 2 0 002-2V7"/></svg></i><b>Doble cara</b><p>Repite tus diseños centrados en la hoja, frente y reverso, con líneas de corte.</p></div>
+  <div class="feat"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M12 3v18M3 12h18"/></svg></i><b>Póster</b><p>Divide una imagen en varias hojas para armar un cartel grande.</p></div>
+ </section>
+
+ <p class="req"><b>Requisitos:</b> Windows 10 u 11 con Microsoft WebView2 Runtime (ya viene en Windows 11 y en Windows 10 actualizado). Si Windows muestra «Windows protegió su PC», pulsa <b>Más información → Ejecutar de todas formas</b>.</p>
+
+ <footer><a href="https://github.com/developerdv1studio-web/impresion-app/releases">Ver todas las versiones</a></footer>
+</div>
+<script>
+// Muestra la última versión publicada (si GitHub responde)
+fetch('https://api.github.com/repos/developerdv1studio-web/impresion-app/releases/latest')
+ .then(r => r.ok ? r.json() : null)
+ .then(d => {
+  if (!d || !d.tag_name) return;
+  const a = (d.assets || []).find(x => x.name === 'Impresion-Setup.exe');
+  const mb = a ? ' · ' + (a.size / 1048576).toFixed(1) + ' MB' : '';
+  document.getElementById('meta').textContent = 'Versión ' + d.tag_name.replace(/^v/, '') + mb + ' · Windows 10 y 11 · se actualiza solo';
+ })
+ .catch(() => {});
+</script>
+</body>
+</html>
