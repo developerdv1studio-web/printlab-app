@@ -1,6 +1,6 @@
-# Impresión para Windows
+# PrintLab para Windows
 
-Programa para imprimir boletos de rifa numerados, talonarios de factura, impresiones a doble cara y pósteres en varias hojas.
+Programa para imprimir boletos de rifa numerados, talonarios de factura, impresiones a 2 lados, pósteres en varias hojas y certificados masivos desde Excel.
 
 ## Descargar
 
